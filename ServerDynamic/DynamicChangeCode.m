@@ -42,6 +42,8 @@
             [user setObject:newscript forKey:LOADCONTENT];
             //加载js内容
             [JPEngine evaluateScript:newscript];
+        } else {
+            [user setObject:@"" forKey:LOADCONTENT];
         }
     }];
 }
